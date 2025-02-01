@@ -1,1 +1,57 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    background-color: #eef2f3; /* Более светлый фон */
+    color: #333; /* Цвет текста */
+}
+
+.container {
+    display: flex; /*!!! Как в задании: Используйте display: flex для расположения карточек в ряд.*/
+    justify-content: center;
+    padding: 40px; /* Увеличены внутренние отступы */
+    flex-wrap: wrap; /* Позволяет карточкам обтекать друг друга */
+}
+
+.card {
+    background-color: #ffffff; /* Основной цвет карточки */
+    border-radius: 15px; /* Увеличили радиус закругления */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Более выразительная тень */
+    margin: 15px; /* Увеличили отступы между карточками */
+    padding: 25px; /* Увеличенные внутренние отступы */
+    max-width: 300px; /* Ширина карточки */
+    transition: transform 0.3s; /* Добавление эффекта трансформации */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Эффект при наведении */
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px; /* Увеличение закругления для изображения */
+}
+
+.card h2 {
+    font-size: 1.5em; /* Увеличенный размер заголовка */
+    margin: 10px 0; /* Отступы сверху и снизу */
+}
+
+.card p {
+    font-size: 1em; /* Размер описания */
+    color: #666; /* Более мягкий цвет для текста описания */
+}
+
+button {
+    background-color: #5b566c; /* Цвет кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем стандартную рамку */
+    border-radius: 5px; /* Закругление углов кнопки */
+    padding: 10px 15px; /* Отступы внутри кнопки */
+    cursor: pointer; /* Курсор в виде указателя */
+    transition: background-color 0.3s; /* Эффект перехода цвета */
+}
+
+button:hover {
+    background-color: #373238; /* Темнее при наведении */
+}
 
